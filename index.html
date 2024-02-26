@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root {
+            --theme-color: #47484c;
+        }
+
+        header {
+            background-image: url('https://data.1freewallpapers.com/download/mountains-landscape-twilight-evening-sky-purple-2048x1152.jpg');
+            height: 80vh;
+            color: white;
+            text-align: center;
+            font-family: Roboto;
+            background-size: cover;
+
+            padding-top: 200px;
+            box-sizing: border-box;
+        }
+
+        .hero-title {
+            margin: 0;
+            color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .feature-card {
+            
+            padding: 30px;
+            text-align: center;
+            font-family: Roboto;
+            color: var(--theme-color);
+            transition-duration: 0.3s;
+            border-radius: 5px;
+        }
+
+        .feature-card:hover {
+            background-color: var(--theme-color);
+            color: white;
+            /* transform: rotateY(70deg); */
+        }
+
+        .section-features {
+
+            padding: 50px 300px;
+            /* display: flex; */
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .section-title {
+            font-family: Roboto;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .section-video {
+            padding: 50px 300px;
+        }
+
+        .section-video video {
+            width: 100%;
+        }
+
+        .section-contact {
+            padding: 50px 300px;
+        }
+
+        .text-input,
+        .text-input-area {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .contact-form {
+            /* border: 2px solid red; */
+        }
+
+        .contact-btn {
+            background-color: var(--theme-color);
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0px 4px 0px 0px black;
+        }
+
+        footer {
+            padding: 50px 300px;
+            background-color: var(--theme-color);
+            color: white;
+            font-family: Roboto;
+
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        .social-link {
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="hero-title" style=" font-size: 50px;">Welcome to My Website</h1>
+
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum culpa tempore molestias illum corporis quaerat
+            harum laudantium vitae unde enim.</h3>
+
+    </header>
+
+    <main>
+
+        <section class="section-features ">
+
+            <h2 class="section-title">Our Features</h2>
+
+            <div class="card-container " >
+                <div class="feature-card" >
+                    <i class="fa-5x fa-solid fa-rocket"></i>
+                    <h3>Feature 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias incidunt mollitia hic magni
+                        ab.</p>
+                </div>
+                <div class="feature-card" >
+                    <i class="fa-5x fa-solid fa-rocket"></i>
+                    <h3>Feature 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias incidunt mollitia hic magni
+                        ab.</p>
+                </div>
+                <div class="feature-card" >
+                    <i class="fa-5x fa-solid fa-rocket"></i>
+                    <h3>Feature 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere alias incidunt mollitia hic magni
+                        ab.</p>
+                </div>
+              
+            </div>
+
+        </section>
+
+        <section class="section-video">
+
+            <h2 class="section-title">Our Work</h2>
+
+            <video src="video.mp4" autoplay controls muted loop></video>
+
+        </section>
+
+        <section class="section-contact">
+            <h2 class="section-title">Contact Us</h2>
+
+            <form class="contact-form">
+
+                <label>Name</label>
+                <input type="text" class="text-input">
+
+                <label>Email Address</label>
+                <input type="text" class="text-input">
+
+                <label>Contact Number</label>
+                <input type="text" class="text-input">
+
+                <label>Message</label>
+                <textarea rows="5" class="text-input-area"></textarea>
+
+                <button class="contact-btn">Submit</button>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div>
+            <h3>Website Name</h3>
+            <p> &copy; 2024 Website Name </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium temporibus minima praesentium id maiores vero, blanditiis a dicta beatae quaerat.</p>
+
+            <button class="footer-btn">Learn More</button>
+
+        </div>
+
+        <div>
+            <h5>Find us on:</h5>
+
+            <a href="#" class="social-link"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-square-github"></i> Github</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+        </div>
+        <div>
+            <h5>Find us on:</h5>
+
+            <a href="#" class="social-link"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-square-github"></i> Github</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
